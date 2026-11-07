@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonneade</title>
+
+</head>
+  
+<link rel="stylesheet" href="styles.css" />
+
+ <style>
+       :root {
+            --pink-1: #fff0f7;
+            --pink-2: #ffe8f4;
+            --pink-3: #f8d5e8;
+            --pink-4: #d9a9c5;
+            --text: #5a3a4f;
+            --shadow: rgba(107, 72, 94, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background-image: url("lace frame.png"), url('background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .page-shell {
+            width: min(1100px, 90%);
+            margin: 0 auto;
+            padding: 50px 0 80px;
+        }
+
+        .divider {
+            border: 2px solid var(--pink-2);
+            width: 80%;
+            margin: 24px auto;
+            box-shadow: 0 0 10px rgba(255, 232, 244, 0.7);
+        }
+
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            padding: 8px 0;
+        }
+
+        .parent a {
+            display: inline-block;
+            transition: transform 0.2s ease, filter 0.2s ease;
+            filter: drop-shadow(0 4px 8px var(--shadow));
+        }
+
+        .parent a:hover {
+            transform: scale(0.96);
+            filter: brightness(1.08);
+        }
+
+        .parent img {
+            display: block;
+            max-width: 140px;
+            height: auto;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .image {
+            display: block;
+            width: min(320px, 72vw);
+            height: auto;
+            border: 3px solid var(--pink-2);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 12px 25px var(--shadow);
+        }
+
+        .text-content {
+            max-width: 520px;
+            width: 100%;
+        }
+
+        .greeting {
+            font-family: 'Baby Doll', sans-serif;
+            border: 2px solid var(--pink-2);
+            background-color: rgba(255, 232, 244, 0.92);
+            padding: 20px 24px;
+            text-align: center;
+            margin: 0 0 18px;
+            border-radius: 16px;
+            box-shadow: 0 8px 18px rgba(255, 232, 244, 0.4);
+            font-size: clamp(1.6rem, 2vw, 2.3rem);
+        }
+
+        .message {
+            font-family: 'Baby Doll', sans-serif;
+            border: 2px solid var(--pink-2);
+            background-color: rgba(255, 232, 244, 0.92);
+            padding: 22px 24px;
+            text-align: center;
+            margin: 0;
+            border-radius: 16px;
+            line-height: 1.8;
+            font-size: clamp(1.1rem, 1.7vw, 1.5rem);
+            box-shadow: 0 8px 18px rgba(255, 232, 244, 0.3);
+            white-space: pre-line;
+        }
+
+        @media (max-width: 700px) {
+            .page-shell {
+                width: min(92%, 700px);
+                padding-top: 30px;
+            }
+
+            .flex-container {
+                gap: 24px;
+            }
+
+            .message,
+            .greeting {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+    </style>
+
+<body>
+
+<h1 style="padding-top: 20px; margin-top: 200px; border: 2px solid #ffe8f4; border-radius: 15px; padding: 20px;">bonnea's office !</h1>
+<br>
+<br>
+
+<hr style="border: 2px solid #ffe8f4; width: 35%; margin: 0 auto;">
+
+    <div class="parent">
+<a href="index.html"><img src="home.png" alt="Home" ></a>
+<a href="aboutme.html"><img src="about me.png" alt="About Me" ></a>
+<a href="contact.html"><img src="contact.png" alt="Contact"></a>
+</div>
+<hr style="border: 2px solid #ffe8f4; width: 35%; margin: 0 auto;">
+<br>
+<br>
+
+<img src="welcome.png" alt="welcome" class="image" margin-top="20px" style="display: block; margin: 0 auto; max-width: 80%; height: auto; border-radius: 16px; box-shadow: 0 12px 25px rgba(107, 72, 94, 0.2);">
+
+
+
+</html>
